@@ -14,7 +14,7 @@ let csvStream = csv
 
         // create a new connection to the database
         const connection = mysql.createConnection({
-            host: 'localhost',
+            host: 'gotdb.cm82qhy60d9y.ap-south-1.rds.amazonaws.com',
             user: 'root',
             password: 'password',
             database: 'test'
