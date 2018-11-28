@@ -190,7 +190,8 @@ app.get('/stats', (req, response) => {
 
               Promise.all([promise1,promise2,promise3,promise4,promise5,promise6,promise7])
                 .then(function(results){
-                  response.json(results)
+                let merged = [].concat.apply([], results);
+                  response.json(merged)
                 })
                 .catch(function(err){
                   response.json(err.message)
