@@ -162,7 +162,7 @@ app.get('/stats', (req, response) => {
 
               setTimeout(() => {
                 response.send(resObj)
-              }, 1000);
+              }, 1500);
       })
 
 
